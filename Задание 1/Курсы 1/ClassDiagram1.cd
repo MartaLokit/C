@@ -1,0 +1,109 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<ClassDiagram MajorVersion="1" MinorVersion="1">
+  <Class Name="Курсы_1.Sweets">
+    <Position X="3.25" Y="0.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAEAAAAAAAAAAAAAAQAAAAAAAEAAAgAQAAAAAAAAA=</HashCode>
+      <FileName>Sweets.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Курсы_1.Сandies">
+    <Position X="3.25" Y="3.75" Width="1.25" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>Сandies.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Курсы_1.Biscuits">
+    <Position X="6.5" Y="3.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAgA=</HashCode>
+      <FileName>Biscuits.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Курсы_1.ChocolateSweets">
+    <Position X="0.5" Y="5.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAEAAAAIAAAAAAAAAAAAAAAAAAAABAAAAAAAAAA=</HashCode>
+      <FileName>Chocolate.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Курсы_1.Lollipops">
+    <Position X="4.25" Y="6.25" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>Lollipops.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Курсы_1.Diabetic">
+    <Position X="2.5" Y="5.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>Diabetic.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Курсы_1.SugarBiscuits">
+    <Position X="9.25" Y="3.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>SugarBiscuits.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Курсы_1.ButterBiscuits">
+    <Position X="10.25" Y="5.25" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>ButterBiscuits.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Курсы_1.Biscuit">
+    <Position X="11.75" Y="4" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>Biscuit.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Курсы_1.Paste">
+    <Position X="0.5" Y="3.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAgAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>Paste.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Курсы_1.Jelly">
+    <Position X="6.75" Y="5.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAABAAAAAAAAAAAAAAAAAAAIAAAA=</HashCode>
+      <FileName>Jelly.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Курсы_1.Marmalade">
+    <Position X="9.5" Y="6.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>Marmalade.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Курсы_1.NewYearSet">
+    <Position X="6.25" Y="0.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAQAACAAAAAAAAIAAAAAABAAAAAAAQAAAAAA=</HashCode>
+      <FileName>NewYearSet.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Enum Name="Курсы_1.FirmCandies">
+    <Position X="1" Y="0.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAEQAAAAAAAAAEAAAAAQIA=</HashCode>
+      <FileName>FirmCandies.cs</FileName>
+    </TypeIdentifier>
+  </Enum>
+  <Enum Name="Курсы_1.FirmBiscuits">
+    <Position X="9" Y="0.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAUAAAAAQAAAAAAAQAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>FirmBiscoits.cs</FileName>
+    </TypeIdentifier>
+  </Enum>
+  <Font Name="Segoe UI" Size="9" />
+</ClassDiagram>
