@@ -8,10 +8,10 @@ namespace Курсы_1
     {
         static void Main(string[] args)
         {
-            //LollipopsFirm lollipopsFirm  = new LollipopsFirm();
             //StreamWriter sw = new StreamWriter("Lollipops.txt");
             //sw.WriteLine(lollipopsFirm);
-            string[] ChocolateSweet = File.ReadAllLines("fier.txt");
+            // string[] ChocolateSweet = File.ReadAllLines("fier.txt");
+            string[] ChocolateSweet = new string[3] { "яяяяяя","ффффф","аааааа"};
             NewYearSet newYearSet = new NewYearSet();
             newYearSet.SetName();
             Console.WriteLine("Объем: 500 гр, 700 гр, 850 гр, 1000 гр");
@@ -29,7 +29,7 @@ namespace Курсы_1
                     var sorting = from i in ChocolateSweet
                                   orderby i
                                   select i; 
-                    foreach (var i in sorting)
+                    foreach (string i in sorting)
                     {
                         Console.WriteLine(sorting);
                     }
@@ -37,6 +37,23 @@ namespace Курсы_1
                 default:
                     Console.WriteLine("Ошибка в заполнении");
                     break;
+            }
+            Console.WriteLine("* * * * * * * Поиск конфет* * * * * * ");
+            Console.WriteLine("* * * без сахара, 56 грамм , 84 граммa * * *");
+            Console.WriteLine("Уровень сахара");
+            var sugar = Console.ReadLine();
+            int numberLine = 0;
+            foreach(string line in File.ReadAllLines(@"sugar.txt"))
+            {
+                numberLine++;
+                if (line.Contains(sugar))
+                { 
+                    Console.WriteLine(line); 
+                }
+                else
+                {
+                    Console.WriteLine("Таких нет");
+                }
             }
         }
     }
