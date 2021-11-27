@@ -5,21 +5,20 @@ using System.Text;
 
 namespace Задание_1._2
 {
-    class СhocolateSweets:Composition
+    class Biscuits 
     {
-        public string[] sweets = File.ReadAllLines("sugar.txt");
-
         public string sugar()
         {
             string sugars = Console.ReadLine();
-            foreach (string line in File.ReadAllLines(@"sugar.txt"))
+            foreach (string line in File.ReadAllLines(@"BiscuitsSugar.txt"))
             {
                 if (line.Contains(sugars))
                 {
-                   return line;
+                    return line;
                 }
             }
             return "";
+
         }
     }
 }

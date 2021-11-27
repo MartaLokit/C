@@ -4,8 +4,8 @@ using System.Text;
 
 namespace Задание_1._2
 {
-    interface ISweetRepository
-    {
-        string Read(); 
-    }
+   public interface ISweetRepository
+   {
+        IEnumerable<SweetBase> Read();
+   }
 }
