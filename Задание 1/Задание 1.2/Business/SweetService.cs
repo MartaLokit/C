@@ -2,11 +2,14 @@
 using System.IO;
 using System.Collections.Generic;
 using System.Linq;
+using Задание_1._2.Users;
+
 namespace Задание_1._2.Business
 {
     class SweetService : ISweetServise
     {
-        SweetBase sweet = new SweetBase();
+        SweetBase sweets = new SweetBase();
+        SweetRepository SweetRepository = new SweetRepository();
         private readonly ISweetRepository _sweetRepository;
         public SweetService(ISweetRepository sweetRepository)
         {
@@ -16,21 +19,14 @@ namespace Задание_1._2.Business
         {
 
         }
-        //public IEnumerable<SweetBase> Sort(IEnumerable<SweetBase> sweets)
-        //{
-        //    return sweets.OrderBy(s => s.Name); 
-        //}
-        public string Sort()
+        public IEnumerable<SweetBase> Sort(/*IEnumerable<SweetBase> sweets*/)
         {
-            string[] sweetq = File.ReadAllLines("set.txt");
-            var orderedNumbers = from i in sweetq
-                                 orderby i
-                                 select i;
-            foreach (string item in orderedNumbers)
-            {
-                Console.WriteLine(item);
-            }
-            return "";
+            IEnumerable<SweetBase> sweets=SweetRepository.Read();
+            return sweets.OrderBy(s => s.Name);
+        }
+        public IEnumerable<SweetBase> GetSweets()
+        {
+            return _sweetRepository.Read();          
         }
         public string Display()
         {
@@ -53,40 +49,34 @@ namespace Задание_1._2.Business
             }
             return "-----------";
         }
-        public string Add()
+        public double Add()
         {
+            string[] save = File.ReadAllLines("Save.txt");
             Console.WriteLine("Добавить:       Сохранить - 66");
             while (true)
             {
                 string write = Console.ReadLine();
                 if (write != "66")
                 {
-                    foreach (string sweets in File.ReadAllLines("set.txt"))
-                    {
-                        if (sweets.Contains(write.ToString()))
-                        {
-                            List<string> ts = new List<string>();
-                            using (StreamWriter sw = new StreamWriter("Save.txt", true))
-                            {
-                                sw.WriteLine(write.ToString());
-                                sw.Close();
-                            }
-                        }
-                    }
-                }
-                if (write == "66")
+                       List<string> ts = new List<string>();
+                       using (StreamWriter sw = new StreamWriter("Save.txt", true))
+                       {
+                          sw.WriteLine(write.ToString());
+                          sw.Close();
+                       }
+                }               
+                if (write == "66")// готово 
                 {
-                    double resault = sweet.Price;
-                    int i;
-                    for (i = 0; i < resault; i++)
+                    double sum = 0;
+                    Console.Write("Состав: ");
+                    foreach (var items in SweetRepository.ReadSave())
                     {
-                        resault += resault;
+                        sum += items.Price;
                     }
-                    Console.WriteLine($"Cумма:  {resault}");
-                    break;
+                    return sum;
+
                 }
             }
-            return " ";
         }
     }
 }

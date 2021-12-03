@@ -5,17 +5,13 @@ using System.Text;
 
 namespace Задание_1._2
 {
-    class Lollipops 
+    public class Lollipops 
     {
-        public string sugar()
+        public string lollipops()
         {
-            string sugars = Console.ReadLine();
-            foreach (string line in File.ReadAllLines(@"lollipopsSugar.txt"))
-            {     
-                if (line.Contains(sugars))
-                {
-                    return line;
-                }
+            foreach (string line in File.ReadAllLines(@"Lollipops.txt"))
+            {
+                Console.WriteLine(line); 
             }
             return "";
             
