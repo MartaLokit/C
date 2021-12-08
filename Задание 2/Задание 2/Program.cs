@@ -11,13 +11,9 @@ namespace Задание_2
         static void Main(string[] args)
         {
             DocumentService documentService = new DocumentService();
-            //Console.WriteLine(documentService.NumberWord());
+            //Console.WriteLine(documentService.NumberWord());//не до конца
+            //Console.WriteLine("*****************************");
             Console.WriteLine(documentService.NumberChar());
-
-
-
-
-           
         }
     }
 }
