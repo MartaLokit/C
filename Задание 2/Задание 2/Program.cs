@@ -10,8 +10,9 @@ namespace Задание_2
     {
         static void Main(string[] args)
         {
+            Class1 class1 = new Class1();
             DocumentService documentService = new DocumentService();
-            //Console.WriteLine(documentService.NumberWord());//не до конца
+           // Console.WriteLine(documentService.NumberWord());//не до конца
             //Console.WriteLine("*****************************");
             Console.WriteLine(documentService.NumberChar());
         }
