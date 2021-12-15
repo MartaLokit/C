@@ -9,19 +9,19 @@ namespace Задание_2.Data_Access
    public class NumberString:GetWord
     {
         public string[] Lines = File.ReadAllLines("HerFault  — копия.txt");
-        public void numberWord(string word)
+        public void GetNumberWord(string word)
         {
             int i = 0;
-            for ( i = 0; i < Lines.Length; i++)
+            for ( i = 1; i < Lines.Length; i++)
             {
                 if (Lines[i].Contains(word))
                 {
-                    Console.Write(i + 1+",");  
+                    Console.Write(i +",");  
                 }
             }
             
         }
-        public void numberLetter(string item)
+        public void GetNumberLetter(string item)
         {
             var allwords = Word().Split(' ', '.', '\t', ',');
             char[] s = item.ToCharArray();

@@ -13,10 +13,12 @@ namespace Задание_2
                 {
                     case "1":
                         documentService.GettingNumberWord();
-                            break;
+                            //Console.WriteLine(documentService.GettingNumberWord());
+                        break;
                     case "2":
                         documentService.GettingNumberChar();
-                             break;
+                             //Console.WriteLine(documentService.GettingNumberChar());
+                        break;
                 }
             }
         }
