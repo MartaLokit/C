@@ -11,8 +11,7 @@ namespace Задание_3._1.Data_Base
         public string Number { get; }
         public AccountEventArgs(string Mess, string Num)
         {
-            Mess = Message;
-            Num = Number;
+            Message = Mess;
             Number = CollectionPhone.phone;
         }
     }
