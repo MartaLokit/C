@@ -14,7 +14,7 @@ namespace Задание_3._1
             CollectionPhone cp = new CollectionPhone();
             Registration registration = new Registration();
             Path path = new Path();         
-            Console.WriteLine("1-Регистрация 2-Проверка на работу 3-Отчет по звонкам 4- Вызов");
+            Console.WriteLine("1-Регистрация  3-Отчет по звонкам 4- Вызов");
             var number = Console.ReadLine();
             switch (number)
             {
