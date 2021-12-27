@@ -4,6 +4,8 @@ namespace Задание_3._1.Data_Base
 {
     public class CollectionPhone:Path
     {
+        
+
         public string phone;
         public  string phoneSubscriber;
         public string name;
@@ -22,7 +24,8 @@ namespace Задание_3._1.Data_Base
                 if (line.Contains(NameSubscriber))
                 {
                     var values = line.ToString().Split('\t');
-                    phone = values[0];
+                    phone = values[2];
+                    Console.WriteLine(phone);
                 }
             }
             return phone;

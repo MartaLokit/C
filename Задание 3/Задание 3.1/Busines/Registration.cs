@@ -16,7 +16,6 @@ namespace Задание_3._1.Data_Base
                 name = Console.ReadLine();
                 Console.WriteLine("Введите Дату рождения");
                 DateOfBirth = DateTime.Parse(Console.ReadLine());
-
             }
             catch (Exception)
             {

@@ -2,10 +2,11 @@
 using System.IO;
 using System.Collections.Generic;
 using System.Text;
+using Задание_3._1.Busines;
 
 namespace Задание_3._1.Data_Base
 {
-    public class AddPhone
+    public class AddPhone: EventReg
     {
         public bool GetPhone(string name, DateTime DateOfBirth)
         {
