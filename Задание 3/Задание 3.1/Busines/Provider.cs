@@ -6,23 +6,12 @@ using System.Data.SqlClient;
 using System.Configuration;
 using System.Linq;
 using Задание_3._1.Data_Base;
-using static Задание_3._1.Busines.Station;
 
 namespace Задание_3._1.Busines
 {
-    public class Provider:Station
+    public class Provider
     {
-        DataBase dataBase = new DataBase();
-        public SqlConnection sqlConnection = new SqlConnection();
-        public event AccountHandler Notify;
-        public void Accession(string phoneSubscriber, string phoneCompanion)
-        {
-            if (StatusChange == PortCondition.Free)
-            {
-                StatusChange = PortCondition.Busy;
-                Notify?.Invoke(this, new AccountEventArgs($"Соединение между {phoneSubscriber}   ", phoneCompanion));
-            }
-        }
+        public SqlConnection sqlConnection = new SqlConnection();       
         public void GetProvider()
         {
             ActionProvider action = new ActionProvider();

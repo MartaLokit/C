@@ -6,7 +6,7 @@ using Задание_3._1.Busines;
 
 namespace Задание_3._1.Data_Base
 {
-    public class AddPhone: EventReg
+    public class AddPhone
     {
         public bool GetPhone(string name, DateTime DateOfBirth)
         {

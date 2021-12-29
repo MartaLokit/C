@@ -1,30 +1,24 @@
 ﻿using System;
 using Задание_3._1.Busines;
 using Задание_3._1.Data_Base;
+using Задание_3._1.Временная;
 
 namespace Задание_3._1
 {
     class Program
     {
-
         static void Main(string[] args)
         {
+            string nameSubscriber = " ";
+            OnCalling calling = new OnCalling(nameSubscriber);
             Provider provider = new Provider();
             PriceCall priceCall = new PriceCall();
             InfoCall infoCall = new InfoCall();
-            PortSubscriber portSubscriber = new PortSubscriber("12345");
-            PortCompanion portCompanion = new PortCompanion("12345");
             CollectionPhone cp = new CollectionPhone();
             Registration registration = new Registration();
             Path path = new Path();         
-<<<<<<< HEAD
             Console.WriteLine("1-Регистрация 3-Отчет по звонкам 4- Вызов");
             while (true)
-=======
-            Console.WriteLine("1-Регистрация  3-Отчет по звонкам 4- Вызов");
-            var number = Console.ReadLine();
-            switch (number)
->>>>>>> d345db77acd860550de3e6c194646e702bbf6792
             {
                 var number = Console.ReadLine();
                 switch (number)
@@ -51,24 +45,16 @@ namespace Задание_3._1
                         break;
                     case "4":
                         Console.WriteLine("Выбор контакта");
-                        var nameSubscriber = Console.ReadLine();
-                        portSubscriber.Notify += DisplayMessage;
-                        portSubscriber.Take(cp.GetNumberPhone(nameSubscriber));
-                        Console.WriteLine("Статус собеседника");
-                        portCompanion.Notify += DisplayMessage;
-                        portCompanion.Take(cp.GetNumberPhone(nameSubscriber), nameSubscriber);
+                        nameSubscriber = Console.ReadLine();
+                        calling.Notify += Station.DisplayMessage;
+                        calling.Take(cp.GetNumberPhone(nameSubscriber));
                         Console.Read();
                         break;
                     case "qa1234":
                         provider.GetProvider();
                         break;
                 }
-            }         
-        }
-        private static void DisplayMessage(object sender, AccountEventArgs args)
-        {
-            Console.WriteLine($"Вызов:{args.NameSubscriber}");
-            Console.WriteLine(args.Message);
+            }                
         }
     }
 }

@@ -3,9 +3,7 @@ using System;
 namespace Задание_3._1.Data_Base
 {
     public class CollectionPhone:Path
-    {
-        
-
+    {   
         public string phone;
         public  string phoneSubscriber;
         public string name;

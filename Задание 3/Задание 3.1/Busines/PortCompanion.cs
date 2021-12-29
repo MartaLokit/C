@@ -2,27 +2,19 @@
 using System.Collections.Generic;
 using System.Text;
 using Задание_3._1.Data_Base;
-namespace Задание_3._1.Busines
+
+namespace Задание_3._1.Временная
 {
-    public class PortCompanion:Station
-    {
-        public event AccountHandler Notify;
-        public PortCompanion(string number)
+     public class PortCompanion:Station
+     {   
+        public void Call(string numberPhone)
         {
-            Number = number;
-        }
-        public void Take(string number,string nameSubscriber)
-        {
-            Number = number;
-            if (StatusChange == PortCondition.Free)
+            if (StatusChanges == PortCondition.Free)
             {
-                StatusChange = PortCondition.Busy;
-                Notify?.Invoke(this, new AccountEventArgs($"Вызов с {nameSubscriber}", number));
-            }
-            else
-            {
-                Notify?.Invoke(this, new AccountEventArgs($"Пропущенный от {nameSubscriber}", number));
+                StatusChanges = PortCondition.Busy;
+                OnCalling OnCalling = new OnCalling(numberPhone);
+                OnCalling.Notify += Station.DisplayMessage;
             }
         }
-    }
+     }
 }
